@@ -1,33 +1,4 @@
-.wrapper {
-  width: 500px;
-  height: 500px;
-  background-color: rgba(189, 226, 240, 0.436);
-  margin: 100px auto;
-  padding: 155px 100px 30px 100px;
-  border-radius: 20px;
-  font-family: monospace;
-  font-size: 16px;
-  color: gray;
-}
-
-.wrapper .button {
-  border-radius: 8px;
-  border: 1px solid gray;
-  width: 130px;
-  height: 40px;
-  font-size: 17px;
-  color: #f8f9fa;
-  background-color: #6969697a;
-}
-
-.wrapper .error {
-  color: #812525;
-  font-size: 18px;
-  text-align: left;
-  padding: 2px 0px 0 10px;
-}
-
-.inbox .successAlert {
+.successAlert {
   margin-top: 100px;
   font-family: sans-serif;
   font-weight: 700;
@@ -35,23 +6,22 @@
   color: white;
 }
 
-.inbox * {
+* {
   margin: 0px;
   padding: 0px;
   border: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.inbox html,
-.inbox body {
+html,
+body {
   background: #333b3d;
   font: 14px Tahoma, Geneva, sans-serif;
   width: 100%;
   height: 100%;
 }
 
-.inbox header {
+header {
   margin: 0px auto;
   position: relative;
   width: 90%;
@@ -59,14 +29,14 @@
   height: 100px;
 }
 
-.inbox header h1 {
+header h1 {
   margin: 0px;
   padding: 50px 0px 0px;
   color: #eee;
   font-size: 30px;
 }
 
-.inbox .mailbox {
+.mailbox {
   margin: 0px auto -100px;
   position: relative;
   background: #ccdded;
@@ -75,7 +45,7 @@
   max-width: 960px;
 }
 
-.inbox .nav {
+.nav {
   display: block;
   position: absolute;
   top: 0px;
@@ -84,7 +54,7 @@
   width: 200px;
 }
 
-.inbox .nav a {
+.nav a {
   display: block;
   padding: 5px 10px;
   color: #3d9fc4;
@@ -92,27 +62,27 @@
   text-decoration: none;
 }
 
-.inbox .nav a.active {
+.nav a.active {
   background: #ccdded;
 }
 
-.inbox .nav a:first-child {
+.nav a:first-child {
   margin: 10px 0px 10px;
 }
 
-.inbox .messages {
+.messages {
   padding: 10px 10px 10px 210px;
   width: 100%;
 }
 
-.inbox .actions-dropdown {
+.actions-dropdown {
   display: block;
   float: right;
   position: relative;
   margin: 5px 10px 10px 0px;
 }
 
-.inbox .actions-dropdown label {
+.actions-dropdown label {
   padding: 5px 10px;
   background: #eee;
   color: #666;
@@ -120,16 +90,16 @@
   cursor: pointer;
 }
 
-.inbox .actions-dropdown label span {
+.actions-dropdown label span {
   color: #999;
   font-size: 10px;
 }
 
-.inbox .actions-dropdown:hover ul {
+.actions-dropdown:hover ul {
   display: block;
 }
 
-.inbox .actions-dropdown ul {
+.actions-dropdown ul {
   display: none;
   position: absolute;
   list-style: none;
@@ -138,21 +108,21 @@
   width: 100%;
 }
 
-.inbox .actions-dropdown li {
+.actions-dropdown li {
   padding: 5px 10px;
   color: #666;
   cursor: pointer;
 }
 
-.inbox .actions-dropdown li:hover {
+.actions-dropdown li:hover {
   color: #000;
 }
 
-.inbox .actions-dropdown li:first-child {
+.actions-dropdown li:first-child {
   margin-top: 5px;
 }
 
-.inbox input[name="search"] {
+input[name="search"] {
   display: block;
   float: right;
   margin-bottom: 10px;
@@ -162,11 +132,11 @@
   border-radius: 5px;
 }
 
-.inbox input[name="search"]:focus {
+input[name="search"]:focus {
   outline: none;
 }
 
-.inbox .message {
+.message {
   clear: both;
   margin-bottom: 5px;
   position: relative;
@@ -175,30 +145,30 @@
   border-radius: 5px;
 }
 
-.inbox .message input {
+.message input {
   position: absolute;
   top: 8px;
   left: 10px;
   width: 30px;
 }
 
-.inbox .message .sender {
+.message .sender {
   display: block;
   position: absolute;
   left: 40px;
   color: #000;
   font-weight: bold;
-  width: 90px;
+  width: 160px;
+  text-align: left;
 }
 
-.inbox .message .title {
+.message .title {
   display: inline-block;
   padding-left: 150px;
   width: 100%;
 }
 
-.inbox .message .date {
+.message .date {
   position: absolute;
   right: 10px;
 }
-/*# sourceMappingURL=Loginform.css.map */

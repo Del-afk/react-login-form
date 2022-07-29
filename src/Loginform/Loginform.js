@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./Loginform.scss";
 import "../enums/loginEnums";
 import { errors, errorTypes } from "../enums/loginEnums";
+import Inbox from "../inbox/Inbox";
 
 export default function Loginform() {
   const [errorMassages, setErrorMassages] = useState({});
@@ -87,13 +88,7 @@ export default function Loginform() {
     );
   };
 
-  const loginSuccess = () => {
-    return <div className="successAlert">User is successfully logged in</div>;
-  };
-
   return (
-    <div className="login-form">
-      {isSubmitted ? loginSuccess() : loginForm()}
-    </div>
+    <div className="login-form">{isSubmitted ? Inbox() : loginForm()}</div>
   );
 }
